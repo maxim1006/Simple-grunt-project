@@ -1,0 +1,117 @@
+// Mixins
+.clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.font-basic(@font-size: 11px) {
+    font-family: Arial, sans-serif;
+    font-size: @font-size;
+}
+
+.background-size(@size) {
+    -webkit-background-size: @size;
+    background-size: @size;
+}
+
+.box-sizing(@box-sizing) {
+    -webkit-box-sizing: @box-sizing;
+       -moz-box-sizing: @box-sizing;
+            box-sizing: @box-sizing;
+}
+
+.border-radius(@border-radius) {
+    border-radius: @border-radius;
+    background-clip: padding-box;
+}
+
+.box-shadow(@box-shadow) {
+    -webkit-box-shadow: @box-shadow;
+       -moz-box-shadow: @box-shadow;
+            box-shadow: @box-shadow;
+}
+
+.transition(@transition) {
+    -webkit-transition: @transition;
+       -moz-transition: @transition;
+         -o-transition: @transition;
+            transition: @transition;
+}
+
+.transform(@transform) {
+    -webkit-transform: @transform;
+       -moz-transform: @transform;
+        -ms-transform: @transform;
+         -o-transform: @transform;
+            transform: @transform;
+}
+
+.transform-origin(@transform-origin) {
+    -webkit-transform-origin: @transform-origin;
+       -moz-transform-origin: @transform-origin;
+        -ms-transform-origin: @transform-origin;
+         -o-transform-origin: @transform-origin;
+            transform-origin: @transform-origin;
+}
+
+.linear-gradient(@start-color, @end-color) {
+    background-color: @start-color;
+    background-image: -webkit-linear-gradient(top, @start-color 0%, @end-color 100%);
+    background-image:    -moz-linear-gradient(top, @start-color 0%, @end-color 100%);
+    background-image:     -ms-linear-gradient(top, @start-color 0%, @end-color 100%);
+    background-image:      -o-linear-gradient(top, @start-color 0%, @end-color 100%);
+    background-image:   linear-gradient(to bottom, @start-color 0%, @end-color 100%);
+}
+
+.radial-gradient(@start-color, @end-color, @position: center) {
+    @start-color-ie: argb(@start-color);
+    @end-color-ie: argb(@end-color);
+
+    background: -webkit-radial-gradient(@position, ellipse cover, @start-color 0%, @end-color 75%);
+    background:    -moz-radial-gradient(@position, ellipse cover, @start-color 0%, @end-color 75%);
+    background:     -ms-radial-gradient(@position, ellipse cover, @start-color 0%, @end-color 75%);
+    background:      -o-radial-gradient(@position, ellipse cover, @start-color 0%, @end-color 75%);
+    background:             radial-gradient(ellipse at @position, @start-color 0%, @end-color 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="@{start-color-ie}", endColorstr="@{end-color-ie}", GradientType=1);
+}
+
+.menu-gradient(@first-color, @second-color, @third-color) {
+    background-image: -webkit-linear-gradient(top, @first-color, @second-color 10%, @third-color);
+    background-image:    -moz-linear-gradient(top, @first-color, @second-color 10%, @third-color);
+    background-image:     -ms-linear-gradient(top, @first-color, @second-color 10%, @third-color);
+    background-image:      -o-linear-gradient(top, @first-color, @second-color 10%, @third-color);
+    background-image:   linear-gradient(to bottom, @first-color, @second-color 10%, @third-color);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="@{second-color}", endColorstr="@{third-color}", GradientType=0);
+}
+
+.user-select() {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;
+}
+
+.inline-block-middle() {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.placeholder(@rules) {
+    &::-webkit-input-placeholder {
+        @rules();
+    }
+
+    &::-moz-placeholder {
+        opacity: 1;
+        @rules();
+    }
+
+    &:-ms-input-placeholder {
+        @rules();
+    }
+}
+

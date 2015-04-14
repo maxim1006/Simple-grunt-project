@@ -1,0 +1,13 @@
+{
+    "name": "project",
+    "version": "0.1.0",
+    "description": "New project",
+    "main": "Gruntfile.js",
+    "author": "maxim1006",
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-autoprefixer": ">=1.0.1",
+        "grunt-contrib-less": ">=0.12.0",
+        "grunt-contrib-watch": ">=0.6.1"
+    }
+}

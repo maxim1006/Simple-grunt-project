@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <title>FilmCracker</title>
+    <link rel="stylesheet" href="styles/main.css"/>
+</head>
+<body>
+
+<div class="page">
+    <div class="page__layout">
+        <header class="header">
+            <div class="header__logo">
+                <a class="logo" href="/">
+                    <i class="logo__icon"></i>
+                    <span class="logo__text">Film<em>Cracker</em></span>
+                </a>
+            </div>
+            <nav class="header__nav">
+                <div class="header__nav-item">
+                    <i class="header__nav-icon header__nav-icon_menu"></i>
+                </div>
+                <div class="header__nav-item">
+                    <i class="header__nav-icon header__nav-icon_search"></i>
+                </div>
+                <div class="header__nav-item">
+                    <i class="header__nav-icon header__nav-icon_user"></i>
+                    <span class="header__nav-user">John Wick</span>
+                </div>
+            </nav>
+        </header>
+
+        <section class="film-promo" style="background-image: url(images/films/dark-knight.jpg)">
+            <div class="film-promo__info">
+                <div class="film-promo__play">
+                    <i class="icon icon_play"></i>
+                </div>
+                <h2 class="film-promo__title">The Dark Knight</h2>
+                <span class="film-promo__rating">
+                    <i class="film-promo__star film-promo__star_full"></i>
+                    <i class="film-promo__star film-promo__star_full"></i>
+                    <i class="film-promo__star film-promo__star_full"></i>
+                    <i class="film-promo__star film-promo__star_full"></i>
+                    <i class="film-promo__star film-promo__star_half"></i>
+                </span>
+                <div class="film-promo__genre">Action | Crime | Drama</div>
+                <div class="film-promo__date">14 August 2008</div>
+            </div>
+        </section>
+
+        <section class="film-set">
+            <h1 class="film-set__title">Recommended for you</h1>
+            <ul class="film-set__list">
+                <li class="film-set__item">
+                    <article class="film-card film-card_lock" data-title="The Matrix" data-year="1999">
+                        <div class="film-card__preview-wrapper">
+                            <div class="film-card__preview" style="background-image: url(images/films/matrix.jpg)">
+                                <span class="film-card__icon"><i class="icon icon_lock"></i></span>
+                            </div>
+                        </div>
+                        <div class="film-card__info">
+                            <span class="film-card__rating">8.7</span>
+                            <h2 class="film-card__title">The Matrix</h2>
+                            <p class="film-card__genre">Action, Sci-Fi</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="film-set__item">
+                    <article class="film-card film-card_play" data-title="Avatar" data-year="2009" data-url="trailers/cinderella.mp4">
+                     <!--   <div class="film-card__preview-wrapper">
+                            <div class="film-card__preview" style="background-image: url(images/films/avatar.jpg)">
+                                <span class="film-card__icon"><i class="icon icon_play"></i></span>
+                            </div>
+                        </div>-->
+                        <div class="film-card__preview-wrapper">
+                            <div class="film-card__preview" style="background-image: url(images/films/cinderella.png)">
+                                <span class="film-card__icon"><i class="icon icon_play"></i></span>
+                            </div>
+                        </div>
+                        <div class="film-card__info">
+                            <span class="film-card__rating">5.0</span>
+                            <h2 class="film-card__title">Avatar</h2>
+                            <p class="film-card__genre">Action, Adventure, Fantasy</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="film-set__item">
+                    <article class="film-card film-card_lock" data-title="127 Hours" data-year="2010">
+                        <div class="film-card__preview-wrapper">
+                            <div class="film-card__preview" style="background-image: url(images/films/127-hours.jpg)">
+                                <span class="film-card__icon"><i class="icon icon_lock"></i></span>
+                            </div>
+                        </div>
+                        <div class="film-card__info">
+                            <span class="film-card__rating">5.0</span>
+                            <h2 class="film-card__title">127 Hours</h2>
+                            <p class="film-card__genre">Adventure, Biography, Drama</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="film-set__item">
+                    <article class="film-card film-card_play" data-title="Skyfall" data-year="2012">
+                        <div class="film-card__preview-wrapper">
+                            <div class="film-card__preview" style="background-image: url(images/films/skyfall.jpg)">
+                                <span class="film-card__icon"><i class="icon icon_play"></i></span>
+                            </div>
+                        </div>
+                        <div class="film-card__info">
+                            <span class="film-card__rating">7.8</span>
+                            <h2 class="film-card__title">Skyfall</h2>
+                            <p class="film-card__genre">Action, Adventure</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="film-set__item">
+                    <article class="film-card film-card_lock" data-title="Skyline" data-year="2010">
+                        <div class="film-card__preview-wrapper">
+                            <div class="film-card__preview" style="background-image: url(images/films/skyline.jpg)">
+                                <span class="film-card__icon"><i class="icon icon_lock"></i></span>
+                            </div>
+                        </div>
+                        <div class="film-card__info">
+                            <span class="film-card__rating">4.4</span>
+                            <h2 class="film-card__title">Skyline</h2>
+                            <p class="film-card__genre">Action, Sci-Fi, Thriller</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="film-set__item film-set__item_large">
+                    <article class="film-card film-card_large film-card_lock" data-title="Superman Returns" data-year="2006">
+                        <div class="film-card__preview-wrapper">
+                            <div class="film-card__preview" style="background-image: url(images/films/superman.jpg)">
+                                <span class="film-card__icon"><i class="icon icon_lock"></i></span>
+                            </div>
+                        </div>
+                        <div class="film-card__info">
+                            <span class="film-card__rating">6.1</span>
+                            <h2 class="film-card__title">Superman Returns</h2>
+                            <p class="film-card__genre">Action, Adventure, Fantasy</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="film-set__item">
+                    <article class="film-card film-card_play" data-title="Harry Potter and the Deathly Hallows: Part 1" data-year="2010">
+                        <div class="film-card__preview-wrapper">
+                            <div class="film-card__preview" style="background-image: url(images/films/harry-potter.jpg)">
+                                <span class="film-card__icon"><i class="icon icon_play"></i></span>
+                            </div>
+                        </div>
+                        <div class="film-card__info">
+                            <span class="film-card__rating">9.1</span>
+                            <h2 class="film-card__title">Harry Potter and the Deathly Hallo&hellip;</h2>
+                            <p class="film-card__genre">Action, Adventure, Fantasy</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="film-set__item">
+                    <article class="film-card film-card_lock" data-title="RoboCop" data-year="2014">
+                        <div class="film-card__preview-wrapper">
+                            <div class="film-card__preview" style="background-image: url(images/films/robocop.jpg)">
+                                <span class="film-card__icon"><i class="icon icon_lock"></i></span>
+                            </div>
+                        </div>
+                        <div class="film-card__info">
+                            <span class="film-card__rating">5.4</span>
+                            <h2 class="film-card__title">RoboCop</h2>
+                            <p class="film-card__genre">Action, Adventure, Fantasy</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="film-set__item">
+                    <article class="film-card film-card_lock" data-title="Abduction" data-year="2011">
+                        <div class="film-card__preview-wrapper">
+                            <div class="film-card__preview" style="background-image: url(images/films/abduction.jpg)">
+                                <span class="film-card__icon"><i class="icon icon_lock"></i></span>
+                            </div>
+                        </div>
+                        <div class="film-card__info">
+                            <span class="film-card__rating">6.4</span>
+                            <h2 class="film-card__title">Abduction</h2>
+                            <p class="film-card__genre">Action, Adventure, Fantasy</p>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="film-promo film-promo_large" style="background-image: url(images/films/oblivion.jpg)">
+            <div class="film-promo__info">
+                <div class="film-promo__play">
+                    <i class="icon icon_play"></i>
+                </div>
+                <h2 class="film-promo__title">Oblivion</h2>
+                <span class="film-promo__rating">
+                    <i class="film-promo__star film-promo__star_full"></i>
+                    <i class="film-promo__star film-promo__star_full"></i>
+                    <i class="film-promo__star film-promo__star_full"></i>
+                    <i class="film-promo__star film-promo__star_full"></i>
+                    <i class="film-promo__star film-promo__star_half"></i>
+                </span>
+                <div class="film-promo__genre">Action | Crime | Drama</div>
+                <div class="film-promo__date">14 August 2008</div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__nav">
+                <nav class="nav-menu">
+                    <ul class="nav-menu__list">
+                        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Home</a></li>
+                        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Search</a></li>
+                        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Site Index</a></li>
+                        <li class="nav-menu__item"><a class="nav-menu__link" href="#">In Theaters</a></li>
+                        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Coming Soon</a></li>
+                        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Top Movies</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__nav">
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">Top 250</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">TV</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">News</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">Message Boards</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">Press Room</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer__nav">
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">Advertising</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">Contact Us</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">Jobs</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">IMDbPro</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">Box Office Mojo</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">Withoutabox</a></li>
+                </ul>
+            </div>
+            <div class="footer__logo">
+                <a class="logo" href="#">
+                    <i class="logo__icon"></i>
+                    <span class="logo__text">Film<em>Cracker</em></span>
+                </a>
+            </div>
+        </footer>
+
+        <div class="popup-back" style="display: none;"></div>
+        <section class="popup jsPopupWarning">
+            <div class="popup__content">
+                <h1 class="popup__title">Sorry</h1>
+                <p class="popup__text">You have reached your Movies allowance for this month. Request permission to watch <span id="filmTitle">Cinderella</span> (<span id="filmYear">2015</span>)</p>
+                <textarea class="popup__comment" placeholder="Comment to the request"></textarea>
+                <div class="popup__action">
+                    <button class="popup__button" id="hidePopup">Cancel</button><button class="popup__button" type="submit" id="submitRequest">Request rights</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="popup popup_trailer jsPopupTrailer">
+            <i class="popup__cross jsPopupCross"></i>
+            <div class="popup__content">
+                <div class="trailer" id="movie">
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="scripts/libs/jquery-2.1.3.min.js"></script>
+<script src="scripts/main.js"></script>
+<script>
+    $(document).ready(function() {
+        FilmCracker.Main.init();
+    });
+</script>
+
+</body>
+</html>
