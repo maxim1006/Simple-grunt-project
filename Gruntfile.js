@@ -6,14 +6,15 @@ module.exports = function(grunt) {
         // Настройка плагина less
         less: {
             development: {
-                files: [{
-                    expand: true,
-                    cwd: 'styles/',
-                    src: '*.less',
-                    dest: 'styles/',
-                    ext: '.css',
-                    flatten: true
-                }]
+                options: {
+                    //указать, минифицировать ли файл
+                    compress: false
+                },
+                files: {
+                    //тут соответственно указать путь где создавать
+                    //конвертируемый файл
+                    "styles/main.css": "styles/main.less"
+                }
             }
         },
         // Настройка плагина watch
